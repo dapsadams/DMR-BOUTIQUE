@@ -15,8 +15,8 @@ function AddMaterial({ shop }) {
   const CATEGORIES_KEY = `categories_${shop}`;
 
   useEffect(() => {
-    loadCategories();
-  }, [shop]);
+  loadCategories();
+}, [shop, formData.category]);
 
   const loadCategories = () => {
     const stored = localStorage.getItem(CATEGORIES_KEY);

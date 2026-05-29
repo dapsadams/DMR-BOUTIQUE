@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import StockRemovalModal from './StockRemovalModal';
 
 function Inventory({ shop }) {
-  const [materials, setMaterials] = useState([]);
-  const [categories, setCategories] = useState([]);
-  const [searchTerm, setSearchTerm] = useState('');
+const [materials, setMaterials] = useState([]);
+const [categories, setCategories] = useState([]);
+const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [stats, setStats] = useState({ total: 0, lowStock: 0, outOfStock: 0 });
   const [modal, setModal] = useState({
